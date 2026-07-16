@@ -274,12 +274,6 @@
       font-size: 13px;
       overflow-wrap: anywhere;
     }
-    .level {
-      display: inline-block;
-      margin-top: 7px;
-      color: var(--accent-text);
-      font: 650 12px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
-    }
     .summary {
       margin: 14px 0 9px;
       font-size: 15px;
@@ -674,7 +668,6 @@
           <div>
             <div class="episode">${escapeHtml(item.course_name)} · 第${escapeHtml(item.episode_number)}集</div>
             <div class="lesson">${escapeHtml(item.lesson_title)} / ${escapeHtml(item.segment_id)}</div>
-            <div class="level">${escapeHtml(item.course_level)}</div>
           </div>
           <div class="time"><span class="time-label">定位时间</span><span class="time-value">${escapeHtml(item.time_range)}</span></div>
         </div>
