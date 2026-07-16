@@ -8,10 +8,10 @@
   <title>火种课程定位</title>
   <style>
     :root {
-      color-scheme: light dark;
-      --canvas: #f6f5f2;
-      --surface: rgba(255, 254, 253, 0.9);
-      --surface-solid: #fffefd;
+      color-scheme: light;
+      --canvas: #ffffff;
+      --surface: rgba(255, 255, 255, 0.94);
+      --surface-solid: #ffffff;
       --surface-subtle: #f1eeea;
       --text: #171514;
       --secondary: #6f6a66;
@@ -418,35 +418,6 @@
     @media (max-width: 340px) {
       .search-row { grid-template-columns: 1fr; }
       .search-row > button { width: 100%; }
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --canvas: #171514;
-        --surface: rgba(42, 38, 36, 0.88);
-        --surface-solid: #252220;
-        --surface-subtle: #302c29;
-        --text: #f7f4f1;
-        --secondary: #bdb6b0;
-        --tertiary: #958e88;
-        --separator: rgba(223, 218, 212, 0.18);
-        --accent: #b9162a;
-        --accent-text: #ff7182;
-        --time-red: #ff7182;
-        --action-red: #b9162a;
-        --action-red-pressed: #8f0f1f;
-        --accent-soft: rgba(185, 22, 42, 0.2);
-        --focus-ring: rgba(185, 22, 42, 0.34);
-        --warning: #e0b779;
-        --shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
-      }
-      .brand-watermark { mix-blend-mode: screen; opacity: 0.024; }
-      .tag { background: var(--surface-solid); }
-      .concept { background: var(--surface-subtle); }
-      .copy.is-success {
-        background: #173c24;
-        border-color: #2f6d42;
-        color: #9ee6b5;
-      }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
