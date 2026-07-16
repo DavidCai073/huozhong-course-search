@@ -9,21 +9,23 @@
   <style>
     :root {
       color-scheme: light dark;
-      --canvas: #f5f5f7;
-      --surface: rgba(255, 255, 255, 0.82);
-      --surface-solid: #ffffff;
-      --surface-subtle: #f5f5f7;
-      --text: #1d1d1f;
-      --secondary: #6e6e73;
-      --tertiary: #8e8e93;
-      --separator: rgba(60, 60, 67, 0.18);
+      --canvas: #f6f5f2;
+      --surface: rgba(255, 254, 253, 0.9);
+      --surface-solid: #fffefd;
+      --surface-subtle: #f1eeea;
+      --text: #171514;
+      --secondary: #6f6a66;
+      --tertiary: #928b85;
+      --separator: #dfdad4;
       --accent: #c31026;
       --accent-text: #c31026;
-      --accent-pressed: #a20d20;
+      --time-red: #c31026;
+      --action-red: #8f0f1f;
+      --action-red-pressed: #760a18;
       --accent-soft: rgba(195, 16, 38, 0.08);
-      --focus-ring: rgba(195, 16, 38, 0.22);
-      --warning: #7a531d;
-      --shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      --focus-ring: rgba(195, 16, 38, 0.18);
+      --warning: #80613b;
+      --shadow: 0 12px 32px rgba(42, 30, 29, 0.08);
       --press-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     * { box-sizing: border-box; }
@@ -187,10 +189,10 @@
       outline-offset: 2px;
     }
     #searchButton {
-      background: var(--accent);
+      background: var(--action-red);
       min-width: 96px;
     }
-    #searchButton:hover { background: var(--accent-pressed); }
+    #searchButton:hover { background: var(--action-red-pressed); }
     .quick-tags {
       display: flex;
       flex-wrap: wrap;
@@ -210,7 +212,7 @@
     .tag:hover {
       border-color: rgba(195, 16, 38, 0.34);
       background: var(--accent-soft);
-      color: var(--accent-text);
+      color: var(--time-red);
     }
     .meta {
       margin: 14px 2px 10px;
@@ -263,7 +265,7 @@
       line-height: 1;
     }
     .time-value {
-      color: var(--accent-text);
+      color: var(--time-red);
       font: 700 17px/1.15 ui-monospace, "SFMono-Regular", Consolas, monospace;
     }
     .lesson {
@@ -321,8 +323,8 @@
       border-color: #b9dfc5;
       color: #176c35;
     }
-    .open-link { background: var(--accent); }
-    .open-link:hover { background: var(--accent-pressed); }
+    .open-link { background: var(--action-red); }
+    .open-link:hover { background: var(--action-red-pressed); }
     .disabled {
       background: var(--surface-subtle);
       color: var(--warning);
@@ -425,21 +427,23 @@
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --canvas: #1c1c1e;
-        --surface: rgba(44, 44, 46, 0.82);
-        --surface-solid: #2c2c2e;
-        --surface-subtle: #363638;
-        --text: #f5f5f7;
-        --secondary: #aeaeb2;
-        --tertiary: #8e8e93;
-        --separator: rgba(235, 235, 245, 0.16);
+        --canvas: #171514;
+        --surface: rgba(42, 38, 36, 0.88);
+        --surface-solid: #252220;
+        --surface-subtle: #302c29;
+        --text: #f7f4f1;
+        --secondary: #bdb6b0;
+        --tertiary: #958e88;
+        --separator: rgba(223, 218, 212, 0.18);
         --accent: #c31026;
-        --accent-text: #ff6b7d;
-        --accent-pressed: #a20d20;
-        --accent-soft: rgba(195, 16, 38, 0.18);
-        --focus-ring: rgba(195, 16, 38, 0.32);
-        --warning: #e6b86a;
-        --shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+        --accent-text: #ff7182;
+        --time-red: #ff7182;
+        --action-red: #8f0f1f;
+        --action-red-pressed: #760a18;
+        --accent-soft: rgba(195, 16, 38, 0.2);
+        --focus-ring: rgba(195, 16, 38, 0.34);
+        --warning: #e0b779;
+        --shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
       }
       .brand-watermark { mix-blend-mode: screen; opacity: 0.024; }
       .copy.is-success {
